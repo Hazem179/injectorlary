@@ -1,0 +1,94 @@
+{% load static %}
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title> Injector & Lary Oilfield Services</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- Place favicon.ico in the root directory -->
+   <link rel="shortcut icon" type="image/x-icon" href="{% static 'img/logo/favicon.ico' %}">
+   <!-- CSS here -->
+   <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+   <link rel="stylesheet" href="{% static 'css/animate.css' %}">
+   <link rel="stylesheet" href="{% static 'css/custom-animation.css' %}">
+   <link rel="stylesheet" href="{% static 'css/swiper-bundle.css' %}">
+   <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+   <link rel="stylesheet" href="{% static 'css/flaticon.css' %}">
+   <link rel="stylesheet" href="{% static 'css/meanmenu.css' %}">
+   <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+   <link rel="stylesheet" href="{% static 'css/spacing.css' %}">
+   <link rel="stylesheet" href="{% static 'css/style.css' %}">
+   <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet"
+      type="text/css" />
+</head>
+<body>
+{% block header %}
+    <!-- tp-header-area-start -->
+    <header class="d-none d-lg-block">
+      <div id="header-sticky" class="tp-header-area-two header-transparent header-space-three pl-115 pr-115">
+         <div class="container-fluid">
+            <div class="row align-items-center header-space-two">
+               <div class="col-xxl-3 col-xl-3 col-lg-3">
+                  <div class="tp-logo text-start">
+                     <a href="{% url 'core:home' %}"><img src="{% static 'img/logo/logo.png' %}" alt=""></a>
+                  </div>
+               </div>
+               <div class="col-xxl-6 col-xl-6 col-lg-6">
+                  <div class="tp-main-menu text-center">
+                     <nav id="mobile-menu">
+                        <ul id = "main-menu">
+                           <li><a href="{% url 'core:home' %}">Home</a></li>
+                           <li><a href="{% url 'core:services' %}">Services</a></li>
+                           <li><a href="{% url 'core:products' %}">Products</a></li>
+                           <li><a href="{% url 'core:aboutUs' %}">About Us</a></li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+               <div class="col-xxl-3 col-xl-3 col-lg-3">
+                  <div class="tp-header-button text-end">
+                     <a class="tp-btn" href="{% url 'core:contact' %}">Let’s Talk</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- tp-header-area-end -->
+   <!-- tp-md-menu-start -->
+   <div id="header-sticky-mobile" class="tp-md-header-area header-transparent d-lg-none  ">
+      <div class="container-fluid">
+         <div class="row align-items-center">
+            <div class="col-md-6 col-6">
+               <div class="tp-logo">
+                  <a href="{% url 'core:home' %}"><img src="{% static 'img/logo/logo.png' %}" alt=""></a>
+               </div>
+            </div>
+            <div class="col-md-6 col-6">
+               <div class="tp-header-right z-index-1 d-flex align-items-center justify-content-end">
+                  <a class="tp-btn d-none d-md-block" href="{% url 'core:contact' %}">Let’s Talk</a>
+                  <button class="tp-menu-bar"><i class="fal fa-bars"></i></button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+{% endblock %}
+{% block content %}
+
+{% endblock %}
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/swiper-bundle.js' %}"></script>
+<script src="{% static 'js/slick.js' %}"></script>
+<script src="{% static 'js/magnific-popup.js' %}"></script>
+<script src="{% static 'js/wow.js' %}"></script>
+<script src="{% static 'js/meanmenu.js' %}"></script>
+<script src="{% static 'js/imagesloaded-pkgd.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>   
+</body>
+
+</html>

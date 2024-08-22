@@ -1,0 +1,412 @@
+{% extends 'base.html' %} {% load static %} {% block header %}
+<!-- tp-header-area-start -->
+<header class="d-none d-lg-block">
+  <div
+    id="header-sticky"
+    class="tp-header-area-two tp-header-bg header-transparent header-transparent-two"
+  >
+    <div class="container-fluid">
+      <div class="row align-items-center">
+        <div class="col-xxl-3 col-xl-3 col-lg-3">
+          <div class="tp-logo text-start">
+            <a href="{% url 'core:home' %}"
+              ><img src="{% static 'img/logo/logo.png' %}" alt=""
+            /></a>
+          </div>
+        </div>
+        <div class="col-xxl-5 col-xl-6 col-lg-6">
+          <div
+            class="tp-main-menu tp-menu-black tp-bs-menu tp-bp-menu text-center"
+          >
+            <nav id="mobile-menu">
+              <ul id="main-menu">
+                <li><a href="{% url 'core:home' %}">Home</a></li>
+                <li><a href="{% url 'core:services' %}">Services</a></li>
+                <li><a href="{% url 'core:products' %}">Products</a></li>
+                <li><a href="{% url 'core:aboutUs' %}">About Us</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="col-xxl-4 col-xl-3 col-lg-3">
+          <div
+            class="tp-header-left d-flex align-items-center justify-content-end"
+          >
+            <div class="tp-header-yellow-button">
+              <a class="tp-btn-white" href="{% url 'core:contact' %}"
+                >Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- tp-header-area-end -->
+
+<div id="header-sticky-mobile" class="tp-md-header-area d-md-block d-lg-none">
+  <div class="container-fluid">
+    <div class="row align-items-center">
+      <div class="col-md-6 col-6">
+        <div class="tp-logo">
+          <a href="{% url 'core:home' %}"
+            ><img src="{% static 'img/logo/logo.png' %}" alt=""
+          /></a>
+        </div>
+      </div>
+      <div class="col-md-6 col-6">
+        <div
+          class="tp-header-right z-index-1 d-flex align-items-center justify-content-end"
+        >
+          <button class="tp-menu-bar"><i class="fal fa-bars"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %} {% block content %}
+
+<!-- tp-md-menu-end -->
+<div class="tp-offcanvas-area">
+  <div class="tpoffcanvas">
+    <div class="tpoffcanvas__logo">
+      <a href="{% url 'core:home' %}">
+        <img src="{% static 'img/logo/logo.png' %}" alt="" />
+      </a>
+    </div>
+    <div class="tpoffcanvas__close-btn">
+      <a class="close-btn" href="javascript:void(0)"
+        ><i class="fal fa-times-hexagon"></i
+      ></a>
+    </div>
+    <div class="tpoffcanvas__content d-none d-sm-block">
+      <p>
+        we specialize in providing top-notch maintenance and fabrication
+        services for oilfield equipment across the UAE.
+      </p>
+    </div>
+    <div class="mobile-menu"></div>
+    <div class="tpoffcanvas__contact">
+      <span>Contact us</span>
+      <ul>
+        <li>
+          <i class="fas fa-star"></i>
+          <a href="javascript:void(0)" target="_blank"
+            >UAE Sharjah,Abudhabi - Zayd city</a
+          >
+        </li>
+        <li>
+          <i class="fas fa-star"></i>
+          <a href="javascript:void(0)">+971 54 513 8031</a>
+        </li>
+        <li>
+          <i class="fas fa-star"></i>
+          <a href="mailto:info@injectorlary.com">info@injectorlary.com</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="body-overlay"></div>
+
+<main>
+  <!-- breadcrumb area start -->
+  <section
+    class="breadcrumb__area breadcrumb__pt-310 include-bg p-relative"
+    data-background="{% static 'img/BG.jpg' %}"
+  >
+    <div class="overlay"></div>
+    <!-- <div class="ac-about-shape-img">
+            <img src="{% static 'img/breadcrum/ab-shape-1.1.jpg' %}" alt="">
+         </div> -->
+    <div class="container p-relative">
+      <div class="row">
+        <div class="col-xxl-12">
+          <div class="breadcrumb__content p-relative z-index-1">
+            <h3 class="breadcrumb__title">
+              We keep your operations running smoothly.
+            </h3>
+            <p>
+              At Injector & Lary Oilfield Services, we specialize in
+              maintaining, fabricating, and enhancing oilfield equipment with
+              exceptional efficiency and reliability.
+            </p>
+            <a href="{% url 'core:contact' %}" class="tp-btn-white-border"
+              >Lets work together <i class="far fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- breadcrumb area end -->
+
+  <!-- tp-abou-me-area-start -->
+  <div class="am-about-me-area pt-110 pb-100">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-5 col-lg-5 col-12">
+          <div class="ac-ab-img fix">
+            <img src="{% static 'img/logo/logo.png' %}" alt="" />
+          </div>
+        </div>
+        <div class="col-xl-7 col-lg-7 col-12">
+          <div class="row">
+            <div class="col-9">
+              <div class="amaboutinfo">
+                <div class="amaboutinfo__client-info">
+                  <h1 class="text-dark">Injector & Lary</h1>
+                  <span>Oilfield Services</span>
+                  <p>
+                    Oil Field Services Facilitate and Support for any Oil Field
+                    Services Injector larry Oil Field Services is an upcoming
+                    service provider and supplier of Oil field equipment and
+                    type of part's ,Within a short span the company has made
+                    inroads in UAE with clients from diverse sectors including
+                    Oil & Gas etc. We provide the supply of comprehensive range
+                    of high-quality products that comply with all the standards
+                    and certifications in an efficient and quick manner. We have
+                    a dedicated service team who renders a wide range of onsite
+                    support service including sand blast for any type of
+                    equipment , repair for treating iron's any kind of BOP
+                    maintenance , Injector etc ,
+                  </p>
+                </div>
+                <div class="amaboutinfo__experience">
+                  <p>
+                    <b>Skilled Workforce:</b> Our team comprises highly trained
+                    professionals who are experts in their respective fields,
+                    ensuring that we deliver top-tier services consistently
+                  </p>
+                  <p>
+                    <b>Experience:</b> With over a decade of experience in the
+                    oilfield industry, our team brings unparalleled knowledge
+                    and expertise to every project.
+                  </p>
+                  <p>
+                    <a href="mailto:webmail.info@gmail.com"
+                      ><b>E-mail:</b> info@injectorlary.com</a
+                    >
+                  </p>
+                  <p>
+                    <b>Phone: </b>
+                    <span>
+                      <a href="https://wa.me/971545138031" target="_blank">+971 54 513 8031</a>,
+                  </span>
+                  <span>
+                    <a href="https://wa.me/971568661836" target="_blank">+971 56 866 1836</a>
+                 </span>
+                  </p>
+                  <p>
+                  <a href="javascript:void(0)" target="blank">
+                        <b>Office:</b> United Arab Emirates, Sharjah, 18 sultan bin Zayed street.<br>
+                        <b>Work shop:</b> United Arab Emirates, Abu Dhabi, Madinat Zayed Industrial Zone</a></span>
+                   </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-3">
+              <div class="amaboutsocial text-start text-md-end">
+                <div class="amaboutsocial__icon mb-30">
+                  <a href="https://www.facebook.com/profile.php?id=61563503151979" target="_blank" class="si-btn-link">
+                    <div class="tp-si-wrapper d-flex justify-content-end">
+                      <div class="tp-si__icon">
+                        <i class="fab fa-facebook-f"></i>
+                      </div>
+                      <div class="tp-si__text"><span>&nbsp;Facebook</span></div>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="amaboutsocial__icon mb-30">
+                  <a href="https://www.linkedin.com/in/injectorlary-lary-1b415531b/" target="_blank" class="si-btn-link">
+                    <div class="tp-si-wrapper d-flex justify-content-end">
+                      <div class="tp-si__icon tp-si-color-2">
+                        <i class="fab fa-linkedin-in"></i>
+                      </div>
+                      <div class="tp-si__text tp-si-color-2">
+                        <span>&nbsp;LinkedIn</span>
+                      </div>
+                      
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- tp-about-me-area-end -->
+
+  <!-- exprience-area-start -->
+  <div class="tp-skill-area">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-12">
+          <div class="amskill">
+            <div class="amskill__title">
+              <h3 class="am-skill-title">Personal Experience</h3>
+              <p class="pb-10">
+                At Injector & Lary Oilfield Services, we value the depth of
+                personal experience that our team brings to every project. Our
+                expertise is not just a product of training, but of years spent
+                on the field, solving real-world problems, and driving
+                innovation.
+              </p>
+              <p>
+                our personal experience is our greatest asset. It fuels our
+                passion for excellence and our commitment to delivering the
+                highest quality services to our clients.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row feature-bottom-space justify-content-between">
+        <div class="col-xl-4 col-lg-4">
+          <div class="amfeature">
+            <div class="amfeature__item">
+              <h4 class="am-skill-sm-title">Skills</h4>
+              <p class="am-p-space-1">
+                Injector & Lary Oilfield Services combines these top skills to
+                deliver exceptional service and innovative solutions in the
+                oilfield industry.
+              </p>
+            </div>
+            <div class="amfeature__list">
+              <ul>
+                <li>
+                  <i class="fal fa-check"></i> Equipment Maintenance Expertise
+                </li>
+                <li>
+                  <i class="fal fa-check"></i> Advanced Fabrication Techniques
+                </li>
+                <li>
+                  <i class="fal fa-check"></i> Specialized Equipment Handling
+                </li>
+                <li>
+                  <i class="fal fa-check"></i>Chemical Handling and Stimulation
+                  Proficiency
+                </li>
+                <li>
+                  <i class="fal fa-check"></i>Advanced Diagnostic and Monitoring
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-4 col-lg-4">
+          <div class="amfeature am-fea-space-2">
+            <div class="amfeature__item">
+              <h4 class="am-skill-sm-title">Awards</h4>
+              <p class="am-p-space-3">
+                Injector & Lary Oilfield Services is proud of these awards,
+                which highlight our commitment to quality, safety, innovation,
+                and customer satisfaction in the oilfield industry.
+              </p>
+            </div>
+            <div class="amfeature__list">
+              <ul>
+                <li><i class="fal fa-check"></i> Industry Excellence Award</li>
+                <li><i class="fal fa-check"></i> Safety Leadership Award</li>
+                <li>
+                  <i class="fal fa-check"></i> Best Maintenance Service Provider
+                </li>
+                <li>
+                  <i class="fal fa-check"></i> Innovation in Fabrication Award
+                </li>
+                <li>
+                  <i class="fal fa-check"></i> Customer Satisfaction Excellence
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- exprience-area-end -->
+</main>
+<!-- footer-area-start -->
+
+<!--<footer> -->
+<footer class="p-relative">
+  <div class="tp-footer-area pt-120 p-relative">
+    <div class="tp-footer-shape-one">
+      <img src="{% static 'img/creative/creative-hand.png' %}" alt="" />
+    </div>
+    <!-- <div class="tp-footer-shape-two">
+            <img src="{% static 'img/service/service-1.png' %}" alt="">
+         </div> -->
+    <div class="container">
+      <div class="row">
+        <div
+          class="col-xl-12 wow tpfadeUp"
+          data-wow-duration=".3s"
+          data-wow-delay=".5s"
+        >
+          <div class="footer-widget-info text-center">
+            <h2 class="tp-footer-title pb-15">Let’s elevate your operations</h2>
+            <p>
+              At Injector & Lary Oilfield Services, we excel in providing
+              top-tier maintenance, fabrication, and field solutions with
+              unmatched reliability.
+            </p>
+            <a class="tp-btn mb-50" href="{% url 'core:contact' %}"
+              >Contact us</a
+            >
+          </div>
+        </div>
+      </div>
+      <div
+        class="tp-copyright-bottom wow tpfadeUp"
+        data-wow-duration=".5s"
+        data-wow-delay=".7s"
+      >
+        <div class="row align-items-center">
+          <div class="col-xl-4 col-lg-4 col-md-12 col-12">
+            <div
+              class="tp-copyright-logo-box text-md-center text-center text-lg-start mb-30"
+            >
+              <div class="tp-copyright-logo">
+                <a href="{% url 'core:home' %}"
+                  ><img src="{% static 'img/logo/logo.png' %}" alt=""
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+            <div
+              class="tp-cpoyright-menu text-md-start text-center text-lg-center mb-30"
+            ></div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+            <div
+              class="tp-copyright-social tp-copyright-social-two text-center text-lg-end mb-30"
+            >
+              <a href="https://www.linkedin.com/in/injectorlary-lary-1b415531b/" target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="https://www.facebook.com/profile.php?id=61563503151979" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- footer-area-end -->
+
+<!-- footer-area-end -->
+
+<button class="scroll-top scroll-to-target" data-target="html">
+  <i class="far fa-angle-double-up"></i>
+</button>
+
+{% endblock %}
